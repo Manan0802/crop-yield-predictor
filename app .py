@@ -1,6 +1,10 @@
-import streamlit as st
+import os
+os.system("pip install --no-cache-dir -q joblib scikit-learn numpy gdown streamlit")
+
 import joblib
+import streamlit as st
 import numpy as np
+import gdown
 
 # Load the saved model
 model = joblib.load("crop_yield_model.pkl")
